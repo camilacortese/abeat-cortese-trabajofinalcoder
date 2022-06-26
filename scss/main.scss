@@ -1,0 +1,608 @@
+body{
+	font-family: 'Roboto', sans-serif;	
+} 
+
+@each $k, $v in $fuentes{
+	.font-#{$k}{
+		font-weight: $v;
+	}
+}
+
+@mixin titulos($font-size){
+	font-size: $font-size;
+}
+
+.titulos-mixin-s{
+	@include titulos(1.2rem);
+}
+
+.titulos-mixin-m{
+	@include titulos(2rem);
+}
+
+.titulos-mixin-l{
+	@include titulos(2.5rem);
+}
+
+.titulos-mixin-xl{
+	@include titulos(3.5rem);
+}
+
+.form-control {
+	border: 0.5px solid #D7DADD;
+	border-radius: 5px;
+	font-weight: 100;
+	color: #7437D3;
+	font-size: 15px; 
+}
+
+/* SECCIÓN HOME */
+
+.btn{
+	background-color: #000;
+    padding: 0.6rem 2.5rem;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    border-radius: 20px;
+    border-color: black;
+	text-decoration: none;
+    transition: all 250ms;
+	&:hover{
+		background-color: #7437D3;
+		border-color: #7437D3;
+		color: white;
+	}
+	@media all and (max-width: 992px){ 
+		padding: 0.5rem 2.3rem;
+		font-size: 10px;
+	}
+	@media all and (max-width: 768px){
+	    padding: 0.4rem 2rem;
+	    font-size: 10px;
+	}
+	@media all and (max-width: 576px){
+	    padding: 0.4rem 1.2rem;
+	    font-size: 10px;
+	}
+}
+
+
+#banner{
+	position: relative;
+	background-image: url(../assets/festivalbyn.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;	
+	height: 50vh;
+	texto{
+		z-index: 2;
+	}		
+	.titulos-mixin-xl{		
+		line-height: 3.5rem;
+		@media all and (max-width: 1400px){ 
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
+		@media all and (max-width: 992px){ 
+			font-size: 1.7rem;
+			line-height: 2.1rem;
+		}	
+		@media all and (max-width: 768px){
+			font-size: 1.5rem;	
+			line-height: 1.9rem;	
+		}		
+	}
+}
+
+
+.item{
+	transition: all 250ms;
+	&:hover{
+		transform: scale(1.1);
+	}	
+	.titulos-mixin-s{
+		@media all and (max-width: 768px){
+			font-size: 1rem;
+		}
+	}
+	.imagenCard{
+		width: 100%
+	}	
+	p{
+		font-size: 1rem;
+		@media all and (max-width: 768px){
+			font-size: 0.7rem;
+			line-height: 0.7rem;
+		}
+	}	
+	a{
+		font-size: 1.2rem;		
+		color: #7437D3;
+		text-decoration: none;
+		@media all and (max-width: 768px){
+			font-size: 1rem;		
+		}	
+	}
+}
+
+
+.spotify{
+	position: relative;
+	background-image: url(../assets/spoty-05.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	border: solid 0.5px white;
+	border-radius: 5px;
+	@media all and (max-width: 992px){ 
+		background-image: url(../assets/spoty-21.jpg);
+	}
+	
+	@media all and (max-width: 768px){
+		background-image: url(../assets/s-22.jpg);
+	}
+	@media all and (max-width: 576px){
+		background-image: url(../assets/s-23.jpg);
+	}
+	.tituloSpotify{
+	 	font-size: 22px;
+	 	z-index: 2;
+	 	color: white;
+	 	@media all and (max-width: 768px){
+			font-size: 18px;
+		}
+ 	}
+	.textSpotify{
+	 	font-size: 18px;
+	 	z-index: 2;
+	 	color: white;
+	 	@media all and (max-width: 768px){
+			font-size: 14px;
+		}
+	}
+	.btn{
+		background-color: #000;
+	    padding: 0.6rem 2.5rem;
+	    display: inline-block;
+	    color: white;
+	    text-decoration: none;
+	    font-size: 13px;
+	    border-radius: 20px;
+	    transition: all 250ms;
+		&:hover{
+			background-color: #7437D3;
+			border-color: #7437D3;
+			color: white;
+		}
+		@media all and (max-width: 992px){ 
+			padding: 0.5rem 2.3rem;
+	    	font-size: 10px;
+		}
+		@media all and (max-width: 768px){
+	    	padding: 0.4rem 2rem;
+	    	font-size: 10px;
+	    }
+		.logospoti{
+		 	width: 18px;
+		 	height: 18px;
+		}
+	}
+}
+
+
+.itemDestinos{
+	position: relative;
+	.imagenDestinos{	
+		border: solid 0.5px white;
+		border-radius: 5px;
+		width: 100%
+	}
+	.tituloDestinos{
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+		font-size: 18px;
+		font-weight: 700;
+		color: white;
+	}
+	.textDestinos{
+		position: absolute;
+		bottom: 1px;
+		right: 30px;
+		font-size: 14px;
+		font-weight: 100;
+		color: white;
+	}	
+}
+
+
+.itemGeneros{
+	position: relative;
+	.imagenGeneros{	
+		border: solid 0.5px white;
+		border-radius: 5px;
+		width: 100%
+	}
+	.tituloGeneros{
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+		font-size: 18px;
+		font-weight: 700;
+		color: white;
+	}
+	.textGeneros{
+		position: absolute;
+		bottom: 1px;
+		right: 30px;
+		font-size: 14px;
+		font-weight: 100;
+		color: white;
+	}
+}
+
+
+		
+.titulos-mixin-m{
+	@media all and (max-width: 768px){
+		font-size: 1.3rem;
+	}
+}
+
+
+
+/* SECCIÓN FESTIVALES  */
+
+
+
+#bannerFestivales{
+	position: relative;
+	background-color: black;
+	min-height: 250px;		
+
+	.texto{
+		z-index: 2;
+	}
+	.titulos-mixin-l{
+		@media all and (max-width: 1200px){ 
+			font-size: 1.7rem;
+			line-height: 2.1rem;
+	}	
+		@media all and (max-width: 768px){
+			font-size: 1.5rem;	
+			line-height: 1.5rem;	
+		}	
+	}
+}
+		
+			
+.itemFestival{
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 355px;
+	height: 355px;
+	border:  solid 0.5px #E1E4EA;	
+	box-shadow: 2px 2px 8px #E1E4EA;
+	position: relative;
+	.imagenNoticia{
+		width: 100%
+	}
+	.descripcion{	
+		font-size: 1rem;
+		@media all and (max-width: 768px){
+			font-size: 0.9rem;			
+		}
+	}
+	.descripcion_mod{	
+		color: #7437D3;
+		text-decoration: none;
+		transition: all 250ms;
+		&:hover{
+			color: #7A4EE5;
+		}
+		@media all and (max-width: 768px){
+			font-size: 1rem;			
+		}	
+	}
+	.flecha{
+		width: 20px;
+		height: 40px;
+		@media all and (max-width: 768px){
+			width: 15px;
+			height: 30px;				
+		}
+	}
+}
+
+
+.select-artist{
+	min-height: 60px;
+	border-radius: 3px;
+}
+
+.form-select{
+	padding: 1rem;
+}
+
+.btn_mod{
+	background-color: #000;
+    padding: 0.6rem 2.5rem;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    border-color: black;
+    border-radius: 20px;
+    transition: all 250ms;
+	&:hover{
+		background-color: #7437D3;
+		border-color: #7437D3;
+	}
+	@media all and (max-width: 768px){
+	    padding: 0.4rem 1.2rem;
+	    font-size: 10px;
+	}
+}
+
+
+
+/* SECCIÓN ARTISTAS  */
+
+
+
+#bannerArtistas{
+	.titulos-mixin-l{		
+		line-height: 2.5rem;	
+		@media all and (max-width: 768px){
+			font-size: 1.5rem;	
+			line-height: 1.5rem;	
+		}		
+	}
+	.textArtistas{
+		font-size: 1rem;
+		line-height: 1rem;
+		@media all and (max-width: 768px){
+			font-size: 0.7rem;	
+			line-height: 0.7rem;
+		}	
+	}
+	.imagenTyler{
+		width: 100%;
+	}
+}
+		
+
+.itemArtista{
+	text-decoration: none;
+	color: black;	
+	transition: all 250ms;
+	&:hover{
+		transform: scale(1.1);
+		color: black;
+	}
+	.imagenArtista{
+	width: 100%;
+	}
+	.titulos-mixin-s{			
+		@media all and (max-width: 768px){
+			font-size: 1rem;			
+		}
+	}
+	.descripcion{	
+		font-size: 1rem;
+		@media all and (max-width: 768px){
+			font-size: 0.7rem;			
+		}			
+	}
+}	
+	
+
+#cardsCabeza{
+	.titulos-mixin-m{
+		@media all and (max-width: 768px){
+		font-size: 1.3rem;	
+		}
+	}
+	.itemCabeza{	
+		text-decoration: none;
+		color: black;	
+		transition: all 250ms;
+		&:hover{
+			transform: scale(1.1);
+		}
+		.titulos-mixin-s{			
+			@media all and (max-width: 768px){
+				font-size: 1rem;			
+			}			
+		}
+		.artic{
+			width: 70%;
+		}	
+		.tyler{
+		    width: 70%;
+		}
+
+		.jack{
+		    width: 70%;
+		}
+		.posty{
+		    width: 70%;
+		}
+		.harrysmall{
+		    width: 73%;
+		}
+		.mac{
+		    width: 68%;
+		}
+	}
+}
+
+
+
+/* SECCIÓN BLOG  */
+
+
+
+#bannerBlog{
+	position: relative;
+	background-image: url(../assets/bb-01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+	@media all and (max-width: 992px){
+		background-image: url(../assets/bb-02.jpg);
+	}
+	@media all and (max-width: 768px){
+		background-image: url(../assets/bb-03.jpg);	
+		font-size: 0.7rem;	
+		line-height: 0.7rem;
+	}
+	@media all and (max-width: 576px){
+		background-image: url(../assets/bb-04.jpg);				
+	}
+	.textoBlog{
+		font-size: 1rem;
+		z-index: 2;
+		color: white;
+		@media all and (max-width: 992px){ 
+			font-size: 0.8rem;
+		}		
+		@media all and (max-width: 768px){
+			font-size: 0.7rem;		
+		}
+	}
+	.titulos-mixin-l{
+		line-height: 2.5rem;
+		color: white;	
+		@media all and (max-width: 992px){ 
+			font-size: 1.7rem;
+		}	
+		@media all and (max-width: 768px){
+			font-size: 1.5rem;	
+			line-height: 1.5rem;	
+		}			
+	}
+	.btn-noticias{
+		color: white;
+		text-decoration: none;
+		background-color: #7437D3;
+		transition: all 250ms;
+		&:hover{
+			color: #white;
+		}	
+	}
+}
+
+
+#cardsBlog{
+	.titulos-mixin-m{
+		@media all and (max-width: 768px){
+			font-size: 1.3rem;	
+		}
+		@media all and (max-width: 992px){ 
+			font-size: 1.4rem;
+		}	
+	}
+	.imagenNoticia{
+		width: 100%;
+	}
+	.itemNoticia{		
+		.titulos-mixin-s{			
+			@media all and (max-width: 768px){
+				font-size: 1rem;			
+			}
+		}		
+		.descripcion-noticia{	
+			font-size: 1rem;
+			@media all and (max-width: 768px){
+				font-size: 0.9rem;			
+			}			
+		}					
+	}
+}		
+
+
+	
+/* SECCIÓN CONTACTO  */
+
+
+
+#bannerContacto{
+	position: relative;
+	background-color: #7437D3;
+	min-height: 100px;		
+	.texto{
+		z-index: 2;
+	}
+}
+
+
+.form{
+	box-sizing: border-box;
+	border:  solid 0.5px white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #E1E4EA;
+	color: black;
+	.btn_mod2{
+		background-color: #000;
+	    padding: 0.6rem 2.5rem;
+	    display: inline-block;
+	    color: white;
+	    font-size: 13px;
+	    border-color: #000;
+	    border-radius: 20px;
+	    transition: all 250ms;
+		&:hover{
+			background-color: #7437D3;
+			color: white;
+		}
+	}
+	.form-control {
+		border: 0.5px solid #D7DADD;
+		border-radius: 5px;
+		font-weight: 100;
+		color: #7437D3 
+	}
+	.form-select{
+		border: 0.5px solid #D7DADD;
+		border-radius: 5px;
+		padding: .375rem .75rem;
+
+	}
+}
+
+
+#footer{
+	.pagos{
+		width: 5%;
+		@media all and (max-width: 768px){
+			width: 10%;
+		}
+	}
+	.cont-pagos{
+		border-bottom: 1px solid #E1E4EA;
+	}
+}
+
+.textFooter{
+	font-size: 18px;
+	@media all and (max-width: 768px){
+		font-size: 12px;
+	}
+}
+
+
+.logoRedes{
+	width: 30px;
+	height: 30px;
+	@media all and (max-width: 768px){
+		width: 25px;
+		height: 25px;
+	}
+	@media all and (max-width: 576px){
+		width: 15px;
+		height: 15px;
+	}
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>ABEAT</title>
+  </head>
+  <body>
+    <div id="header" class="bg-light">
+      <div class="container-xl bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand font-bold" href="index.html">A BEAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="festivales.html">Festivales</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 form-search" type="search" placeholder="Buscar festival, artista..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>  
+    <div id="banner" class="d-flex align-items-center text-justify"> 
+      <div class="col-lg-5 mx-auto my-5 texto text-white">
+        <h1 class="font-bold titulos-mixin-xl">Can you hear the beat? Let the music play.</h1>
+        <button type="button" class="btn btn-primary mt-3 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</button>
+      </div>
+    </div> 
+    <div id="cards" class="py-5 my-5"> 
+      <section class="col-10 offset-1 ">
+        <h2 class="font-bold titulos-mixin-m my-3 mx-4 p-2">
+          What's hot
+        </h2>
+        <div class="row no-gutters container-md justify-content-around mx-auto ">
+          <div class="col-12 col-md-4 item my-3">
+            <img class="imagenCard"src="assets/hd-06.jpg" alt="Castle"> 
+            <h3 class="font-regular titulos-mixin-s px-3 pt-3 pb-1">Coachella</h3>
+            <p class="font-light lh-sm px-3 pt-1 pb-1">El Festival de Música y Artes de Coachella Valley es un gran festival de música que se lleva a cabo durante tres días en la última semana del mes de abril en Indio, California, Estados Unidos en el Valle de Coachella en el desierto de Colorado.</p>
+            <a href="https://www.coachella.com/passes" class="mt-1 p-3">Comprar</a>
+          </div>  
+          <div class="col-12 col-md-4 item my-3">
+            <img class="imagenCard"src="assets/hd-07.jpg" alt="Electro">
+            <h3 class="font-regular titulos-mixin-s px-3 pt-3 pb-1">Tomorrowland</h3>
+            <p class="font-light lh-sm px-3 pt-1 pb-1">El Festival de Música y Artes de Coachella Valley es un gran festival de música que se lleva a cabo durante tres días en la última semana del mes de abril en Indio, California, Estados Unidos en el Valle de Coachella en el desierto de Colorado.</p>
+            <a href="https://www.tomorrowland.com/en/festival/tickets" class="mt-1 p-3">Comprar</a>
+          </div>
+          <div class="col-12 col-md-4 item my-3">
+            <img class="imagenCard"src="assets/hd-08.jpg" alt="Beat">
+            <h3 class="font-regular titulos-mixin-s px-3 pt-3 pb-1">Lollapalooza</h3>
+            <p class="font-light lh-sm px-3 pt-1 pb-1">Tras dos años de pausa, vuelve en julio con un magnífico cartel de ritmos EDM, house, techno, hardstyle, drum and bass y más, repartidos a través de decenas de escenarios y presentados por artistas del género.</p>
+            <a href="https://www.lollapalooza.com/tickets" class="mt-1 p-3">Comprar</a>
+          </div>
+        </div> 
+      </section> 
+    </div> 
+    <div id="spotify" class="py-5 my-5 mx-4"> 
+      <section class="col-10 offset-1 spotify mx-auto justify-content-around">
+        <div class="row no-gutters container-md ">
+          <div class="col-12 col-md-6 p-5 mt-3">
+            <h2 class="tituloSpotify font-bold">Festivales recomendados para ti </h2>
+            <p class="textSpotify font-light">Descubre donde actúan tus artistas favoritos</p>
+            <a href="https://www.spotify.com" class="mt-3 btn">
+              <img src="assets/logospoti.png" class="logospoti mb-1 me-1">
+              Conecta Spotify
+            </a>
+          </div>
+        </div>
+      </section>  
+    </div>
+    <div id="destinos" class="py-5 my-5"> 
+      <section class="col-10 offset-1">
+        <h2 class="font-bold titulos-mixin-m my-3 mx-4 p-2">
+          Destinos populares
+        </h2>
+        <div class="row no-gutters container-md justify-content-around m-auto">
+          <a href="https://www.mundodeportivo.com/actualidad/20180408/442202721344/diez-festivales-musica-espectaculares-mundo.html" class="col-12 col-md-3 itemDestinos my-3">  
+            <img src="assets/dest-19.jpg" class="imagenDestinos">
+            <div class="tituloDestinos">Reino Unido </div>
+            <p class="textDestinos ms-2">49 próximos festivales</p>
+          </a>        
+          <a href="https://www.mundodeportivo.com/actualidad/20180408/442202721344/diez-festivales-musica-espectaculares-mundo.html" class="col-12 col-md-3 itemDestinos my-3">
+            <img src="assets/dest-20.jpg" class="imagenDestinos">
+            <div class="tituloDestinos">Bélgica</div>
+            <p class="textDestinos ms-2">37 próximos festivales</p>
+          </a>   
+          <a href="https://www.mundodeportivo.com/actualidad/20180408/442202721344/diez-festivales-musica-espectaculares-mundo.html" class="col-12 col-md-3 itemDestinos my-3">
+            <img src="assets/dest-18.jpg" class="imagenDestinos">
+            <div class="tituloDestinos">España</div>
+            <p class="textDestinos ms-2">25 próximos festivales</p>
+          </a> 
+          <a href="https://www.mundodeportivo.com/actualidad/20180408/442202721344/diez-festivales-musica-espectaculares-mundo.html" class="col-12 col-md-3 itemDestinos my-3">
+            <img src="assets/dest-17.jpg" class="imagenDestinos">
+            <div class="tituloDestinos">Estados Unidos</div>
+            <p class="textDestinos ms-2">43 próximos festivales</p>
+          </a>  
+        </div>               
+      </section>
+    </div>
+    <div id="generos" class="py-5 my-5"> 
+      <section class="col-10 offset-1">
+        <h2 class="font-bold titulos-mixin-m my-3 mx-4 p-2">
+          Géneros musicales
+        </h2>
+        <div class="row no-gutters container-md justify-content-around m-auto">
+          <a href="https://lasuperagenda.com/festivales-segun-estilos-musicales/" class="col-12 col-md-3 itemGeneros my-3">
+            <img src="assets/generos-16.jpg" class="imagenGeneros">
+            <div class="tituloGeneros mt-2 ms-2">Electrónica</div>
+            <p class="textGeneros ms-2">10 próximos festivales</p>
+          </a>        
+          <a href="https://lasuperagenda.com/festivales-segun-estilos-musicales/" class="col-12 col-md-3 itemGeneros my-3">
+            <img src="assets/generos-15.jpg" class="imagenGeneros">
+            <div class="tituloGeneros mt-2 ms-2">Techno</div>
+            <p class="textGeneros ms-2">45 próximos festivales</p>
+          </a>   
+          <a href="https://lasuperagenda.com/festivales-segun-estilos-musicales/" class="col-12 col-md-3 itemGeneros my-3">
+            <img src="assets/generos-13.jpg" class="imagenGeneros">
+            <div class="tituloGeneros mt-2 ms-2">Rock</div>
+            <p class="textGeneros ms-2">19 próximos festivales</p>
+          </a> 
+          <a href="https://lasuperagenda.com/festivales-segun-estilos-musicales/" class="col-12 col-md-3 itemGeneros my-3">
+            <img src="assets/generos-14.jpg" class="imagenGeneros">
+            <div class="tituloGeneros mt-2 ms-2">Indie</div>
+            <p class="textGeneros ms-2">37 próximos festivales</p>
+          </a>  
+        </div>               
+      </section>
+    </div>    
+    <div id="footer" class="d-flex align-items-center justify-content-end bg-light px-5">
+      <div class="col-10 m-auto cont-pagos py-5">
+        <img src="assets/visa.png" class="pagos ms-0 me">
+        <img src="assets/master.png" class="pagos mx-2">
+        <img src="assets/american.png" class="pagos mx-2">
+        <img src="assets/applep.png" class="pagos mx-2">
+        <img src="assets/gpay.png" class="pagos mx-2">
+      </div> 
+    </div>
+    <div class="d-flex align-items-center justify-content-around py-5 px-4 bg-light">
+      <div class="col-lg-6 col-md-5 col-sm-4 ms-5 p-4"> 
+        <div class="textFooter font-regular">© 2022 ABEAT®. Todos los derechos reservados.</div>
+      </div>  
+      <div class="col-lg-3 col-md-4 col-sm-5 ps-4"> 
+        <a href="https://www.facebook.com"><img class="logoRedes mx-3" src="assets/face.svg" alt="Facebook"></a> 
+        <a href="https://www.instagram.com"><img class="logoRedes mx-3" src="assets/ig.svg" alt="Instagram"></a>
+        <a href="https://www.twitter.com"><img class="logoRedes mx-3" src="assets/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Lo sentimos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Estamos trabajando en esta función :)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

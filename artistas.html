@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>A BEAT</title>
+  </head>
+  <body>
+    <div id="header" class="bg-light">
+      <div class="container-xl bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand font-bold" href="index.html">A BEAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="festivales.html">Festivales</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 form-search" type="search" placeholder="Buscar festival, artista..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+       </div>
+    </div>  
+    <div id="bannerArtistas" class="d-flex align-items-center justify-content-around my-3"> 
+      <div class="col-lg-5 col-md-7 col-sm-7 my-5  me-3 ps-5">
+        <h1 class="titulos-mixin-l font-bold">Descubre artistas en A BEAT </h1>
+        <p class="textArtistas font-light lh-sm">Encuentra y sigue a tus artistas favoritos en A BEAT, y recibe notificaciones cuando se les añade en el cartel de algún festival.</p>
+        <button type="button" class="btn btn-primary mt-3 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Empezar</button>
+      </div>
+      <div class="col-lg-5">
+         <img class="imagenTyler" src="assets/tylerthecreator-12.png" alt="Tyler The Creator"> 
+      </div>
+    </div>     
+    <div id="cardsArtistas" class="py-5 my-5"> 
+      <section class="col-10 offset-1 text-center">
+        <h2 class="titulos-mixin-m font-bold my-5">
+          Populares en A BEAT
+        </h2>
+        <div class="row no-gutters container-md mx-auto">
+          <a href="https://www.youtube.com/watch?v=Su6kidaGW_8" class="col-12 col-md-4 itemArtista">
+            <img class="imagenArtista"src="assets/artistas-02.jpg" alt="Justin Bieber"> 
+            <h3 class="titulos-mixin-s font-regular">1 Justin Bieber</h3>
+            <div class="descripcion font-light">70.003 seguidores</div>
+          </a>  
+          <a href="https://www.youtube.com/watch?v=TdrL3QxjyVw" class="col-12 col-md-4 itemArtista">
+            <img class="imagenArtista" src="assets/artistas-01.jpg" alt="Lana del Rey">  
+            <h3 class="titulos-mixin-s font-regular">2 Lana del Rey</h3>
+            <div class="descripcion font-light">40.348 seguidores</div>  
+          </a>
+          <a href="https://www.youtube.com/watch?v=HmAsUQEFYGI" class="col-12 col-md-4 itemArtista">
+            <img class="imagenArtista"src="assets/artistas-03.jpg" alt="Tyler">  
+            <h3 class="titulos-mixin-s font-regular">3 Tyler the creator</h3>
+            <div class="descripcion font-light">21.348 seguidores</div>
+          </a>
+        </div> 
+      </section> 
+    </div> 
+    <div id="cardsCabeza" class="py-5 my-5"> 
+      <section class="col-10 offset-1 text-center">
+        <h2 class="titulos-mixin-m font-bold my-5">
+          Cabezas de cartel
+        </h2>
+        <div class="row no-gutters container-md mx-auto">
+          <a href="https://www.youtube.com/watch?v=kx7P_ENnDPE" class="col-12 col-md-2 itemCabeza">
+            <img class="jack" src="assets/jack.png" alt="Jackboys">
+            <h3 class="titulos-mixin-s font-regular">The jackboys</h3>                
+          </a>  
+          <a href="https://www.youtube.com/watch?v=cKEwnhc8ItY" class="col-12 col-md-2 itemCabeza">
+            <img class="tyler" src="assets/tyler.png" alt="Tyler the creator">
+            <h3 class="titulos-mixin-s font-regular">Tyler The Creator</h3> 
+          </a>
+          <a href="https://www.youtube.com/watch?v=6366dxFf-Os" class="col-12 col-md-2 itemCabeza">
+            <img class="artic" src="assets/artic.png" alt="Artic Monkeys">
+            <h3 class="titulos-mixin-s font-regular">Artic Monkeys</h3>
+          </a>  
+          <a href="https://www.youtube.com/watch?v=SC4xMk98Pdc" class="col-12 col-md-2 itemCabeza">
+            <img class="posty" src="assets/posty.png" alt="Post Malone">
+            <h3 class="titulos-mixin-s font-regular">Post Malone</h3>
+          </a>  
+          <a href="https://www.youtube.com/watch?v=jIIuzB11dsA" class="col-12 col-md-2 itemCabeza">
+            <img class="harrysmall" src="assets/harry-14.png" alt="Harry Styles">
+            <h3 class="titulos-mixin-s font-regular">Harry Styles</h3>
+          </a>
+          <a href="https://www.youtube.com/watch?v=wIuBcb2T55Q" class="col-12 col-md-2 itemCabeza">
+            <img class="mac" src="assets/mac.png" alt="Mac DeMarco">
+            <h3 class="titulos-mixin-s font-regular">Mac DeMarco</h3>                
+          </a>   
+        </div> 
+      </section> 
+    </div> 
+    <div id="footer" class="d-flex align-items-center justify-content-end bg-light px-5">
+      <div class="col-10 m-auto cont-pagos py-5">
+        <img src="assets/visa.png" class="pagos ms-0 me">
+        <img src="assets/master.png" class="pagos mx-2">
+        <img src="assets/american.png" class="pagos mx-2">
+        <img src="assets/applep.png" class="pagos mx-2">
+        <img src="assets/gpay.png" class="pagos mx-2">
+      </div> 
+    </div>
+    <div class="d-flex align-items-center justify-content-around py-5 px-4 bg-light">
+      <div class="col-lg-6 col-md-5 col-sm-4 ms-5 p-4"> 
+        <div class="textFooter font-regular">© 2022 ABEAT®. Todos los derechos reservados.</div>
+      </div>  
+      <div class="col-lg-3 col-md-4 col-sm-5 ps-4"> 
+        <a href="https://www.facebook.com"><img class="logoRedes mx-3" src="assets/face.svg" alt="Facebook"></a> 
+        <a href="https://www.instagram.com"><img class="logoRedes mx-3" src="assets/ig.svg" alt="Instagram"></a>
+        <a href="https://www.twitter.com"><img class="logoRedes mx-3" src="assets/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Lo sentimos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Estamos trabajando en esta función :)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
